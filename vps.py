@@ -1,16 +1,16 @@
-sudo apt-get update
-sudo apt install vsftpd
-sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig
-sudo ufw status
-sudo ufw allow 20/tcp
-sudo ufw allow 21/tcp
-sudo ufw allow 990/tcp
-sudo ufw allow 40000:50000/tcp
-sudo ufw status
-sudo adduser sadio
-sudo mkdir /home/sadio/ftp
-sudo chown nobody:nogroup /home/sadio/ftp
-sudo chmod a-w /home/sadio/ftp
-sudo mkdir /home/sadio/ftp/files
-sudo chown sadio:sadio /home/sadio/ftp/files
-echo "vsftpd test file" | sudo tee /home/sadio/ftp/files/test.txt
+print("sudo apt-get update")
+print("sudo apt install vsftpd")
+print("sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig")
+print("sudo ufw status")
+print("sudo ufw allow 20/tcp")
+print("sudo ufw allow 21/tcp")
+print("sudo ufw allow 990/tcp")
+print("sudo ufw allow 40000:50000/tcp")
+print("sudo ufw status")
+print("sudo adduser sadio")
+print("sudo mkdir /home/sadio/ftp")
+print("sudo chown nobody:nogroup /home/sadio/ftp")
+print("sudo chmod a-w /home/sadio/ftp")
+print("sudo mkdir /home/sadio/ftp/files")
+print("sudo chown sadio:sadio /home/sadio/ftp/files")
+print("echo "vsftpd test file" | sudo tee /home/sadio/ftp/files/test.txt")
